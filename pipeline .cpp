@@ -20,7 +20,7 @@ pipeline {
     post {
         success {
             // Send a success email notification
-            emailext  to: 'liuyefeng2@gmail.com',
+            emailext  to: 'leahxia36@gmail.com',
                 subject: 'Pipeline Successful',
                 body: 'The pipeline has completed successfully.',
                 attachLog: true
@@ -28,7 +28,7 @@ pipeline {
         }
         failure {
             // Send a failure email notification
-            emailext to: 'liuyefeng2@gmail.com',
+            emailext to: 'leahxia36@gmail.com',
                 subject: 'Pipeline Failed',
                 body: 'The pipeline has failed. Please check the logs for details.',
                 attachLog: true
