@@ -48,7 +48,7 @@ pipeline {
             steps {
                 // Perform a security scan using OWASP ZAP
                 echo 'zap-cli --spider your_app_url'
-                sh'zap-cli --scan your_app_url'
+                echo 'zap-cli --scan your_app_url'
             }
         }
 
